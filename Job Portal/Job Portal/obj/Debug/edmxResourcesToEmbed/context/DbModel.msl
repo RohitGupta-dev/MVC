@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RohitModelStoreContainer" CdmEntityContainer="RohitEntities">
+    <EntitySetMapping Name="tbl_3">
+      <EntityTypeMapping TypeName="RohitModel.tbl_3">
+        <MappingFragment StoreEntitySet="tbl_3">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="rollno" ColumnName="rollno" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

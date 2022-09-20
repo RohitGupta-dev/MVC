@@ -1,0 +1,45 @@
+﻿@model Job_Portal.context.tbl_3
+@{
+    ViewBag.Title = "student";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>student</h2>
+@using (Html.BeginForm("addStudent", "student", FormMethod.Post))
+{
+    <div class="container">
+        <div class="form-group">
+            @Html.HiddenFor(x=>x.id)
+            <label> Name </label>
+            @Html.ValidationMessageFor(x => x.name, "",new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group">
+            <label> Rollno </label>
+            @Html.ValidationMessageFor(x=>x.rollno,"",new {@class= "text-danger" })
+            @Html.TextBoxFor(x => x.rollno, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group">
+            <label> Phone </label>
+            @Html.ValidationMessageFor(x => x.phone, "", new {@class="text-danger"})
+            @Html.TextBoxFor(x => x.phone, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group">
+            <label> Email </label>
+            @Html.ValidationMessageFor(x=>x.Email,"",new {@class="text-danger"})
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="container">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+
+}
+
